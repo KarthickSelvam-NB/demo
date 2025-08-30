@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0038a9, #a1bef9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      padding: 32px;
+      text-align: center;
+      animation: fadeInUp 0.6s ease;
+    }
+    .card h2 {
+      margin-bottom: 8px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #1f2937;
+    }
+    .card p {
+      margin-bottom: 24px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .input-group {
+      position: relative;
+      margin-bottom: 16px;
+    }
+    .input-group input {
+      width: 80%;
+      padding: 12px 12px 12px 40px;
+      border: 1px solid #176bea;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+    }
+    .input-group svg {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      stroke: #9ca3af;
+    }
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 16px;
+      color: #4b5563;
+    }
+    .options a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .options a:hover {
+      text-decoration: underline;
+    }
+    button {
+      width: 100%;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 500;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    .signup {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    .signup a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .signup a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Welcome Back</h2>
+    <p>Secure Login Portal</p>
+    <form>
+      <div class="input-group">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M5.121 17.804A9.004 9.004 0 0112 15a9.004 9.004 0 016.879 2.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-group">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3v1H6a2 2 0 00-2 2v6h16v-6a2 2 0 00-2-2h-1v-1c0-1.657-1.343-3-3-3s-3 1.343-3 3z"/>
+        </svg>
+        <input type="password" placeholder="Password" required>
+      </div>
+      <div class="options">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Sign In</button>
+      <p class="signup">Don’t have an account? <a href="#">Create one</a></p>
+    </form>
+  </div>
+</body>
+</html>
